@@ -1,0 +1,19 @@
+
+
+<div class="container">
+ 
+<div class="text-block1">
+    <form [formGroup]='loginForm' (ngSubmit)="getData()">
+        <input name="firstname" placeholder="Enter name" type="text" formControlName="firstname">
+        <br>
+        <input name="password" placeholder="Enter password" type="password" formControlName="password">
+        <br>
+        <button type="submit">Login</button>
+        <input type="text" id="fn" [value]="loginForm.value.firstname">
+
+    </form>
+    
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+

@@ -1,0 +1,74 @@
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+  
+    
+    <!--                                 Update                                         -->   
+    <br>
+    <div class="company-container">
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title style=" color: rgb(20, 60, 238);">
+               Update the Company Details
+              </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+        
+              <div class="companysName">
+                  <mat-form-field>
+                      <input matInput placeholder="Enter companysName" name="companysName" 
+                      [(ngModel)]="stockmarket.companysName">
+                  </mat-form-field>
+         </div>
+         <div class="companysCEO">
+          <mat-form-field>
+              <input matInput placeholder="Enter companysCEO" name="companysCEO" 
+              [(ngModel)]="stockmarket.companysCEO">
+          </mat-form-field>
+  </div>
+          <div class="companyTurnover">
+              <mat-form-field>
+                  <input minlength="8" matInput placeholder="Enter companyTurnoverand  must be greater than 10Cr." name="companyTurnover" 
+                  [(ngModel)]="stockmarket.companyTurnover">
+              </mat-form-field>
+     </div>
+     <div class="companyWebsite">
+      <mat-form-field>
+          <input matInput placeholder="Enter companyWebsite" name="companyWebsite" 
+          [(ngModel)]="stockmarket.companyWebsite">
+      </mat-form-field>
+  </div>
+      <div class="stockExchange">
+          <mat-form-field>
+              <input matInput placeholder="Enter stockExchange" name="stockExchange" 
+              [(ngModel)]="stockmarket.stockExchange">
+          </mat-form-field>
+  </div>
+  
+                              
+                  <mat-action-row>
+                      <div class="container-fluid padding">
+                          <div class="row">
+                              <div class="col-md-2" style="margin-left: 60px;">
+                                  <button mat-raised-button class="btn btn-primary" (click)="updateCompany()">
+                                      Update Company!!</button>
+                              </div>
+                          </div>
+                      </div>
+                  </mat-action-row>
+             
+        </mat-expansion-panel>
+        </div>
+    
+  
+ 

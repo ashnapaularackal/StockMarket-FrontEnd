@@ -1,0 +1,87 @@
+body {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+.stock-info {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.company-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.mat-action-row {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th.mat-header-cell {
+  background-color: #34495e;
+  color: #fff;
+}
+
+td.mat-cell {
+  background-color: #ecf0f1;
+}
+
+tr:nth-child(even) td.mat-cell {
+  background-color: #bdc3c7;
+}
+
+.action-link a {
+  color: #e74c3c;
+  cursor: pointer;
+}
+.custom-button {
+  background-color: #2ecc71; 
+  color: #3498db;
+  border: none;
+  font-weight: bold;
+}
+
+.custom-button:hover {
+  background-color: #27ae60; }
